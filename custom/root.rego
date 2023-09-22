@@ -1,13 +1,6 @@
 package permit.custom
 
-import data.permit.policies
-
-default allow := false
-
-allow {
-    input.user.key == "test@permit.io"
-    print(policies.__allow_sources)
-}
+default allow := true
 
 # You can find the official Rego tutorial at:
 # https://www.openpolicyagent.org/docs/latest/policy-language/
