@@ -1,5 +1,7 @@
 package permit.custom
 
+import data.permit.policies
+
 default allow := false
 
 allow {
