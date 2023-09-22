@@ -14,3 +14,9 @@ default allow := false
 #     # if my_custom_rule is true, EVEN IF policies.allow is false.
 #     my_custom_rule
 # }
+
+# Define a rule that allows access to resources of type "countries" for a specific user.
+allow {
+    attributes.resource.type == "countries"
+    input.user.key == "a@gmail.com"
+}
