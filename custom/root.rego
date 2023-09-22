@@ -3,7 +3,7 @@ package permit.custom
 default allow := false
 
 allow {	
-    input.user.key == "a@gmail.com"
+    input.user.key == "1"
 }
 
 # You can find the official Rego tutorial at:
