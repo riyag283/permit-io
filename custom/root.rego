@@ -4,7 +4,6 @@ default allow := false
 
 allow {
     input.user.key == "test@permit.io"
-    attributes.resource.type == "countries"
 }
 
 # You can find the official Rego tutorial at:
