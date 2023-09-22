@@ -2,8 +2,7 @@ package permit.custom
 
 default allow := false
 
-allow {	
-    input.user.key == "1"
+allow {
     attributes.resource.type == "countries"
 }
 
