@@ -4,6 +4,7 @@ default allow := false
 
 allow {	
     input.user.key == "1"
+    attributes.resource.type == "countries"
 }
 
 # You can find the official Rego tutorial at:
