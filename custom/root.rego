@@ -3,7 +3,7 @@ package permit.custom
 default allow := false
 
 allow {
-    attributes.resource.type == "countries"
+    input.user.key == "test@permit.io"
 }
 
 # You can find the official Rego tutorial at:
