@@ -7,6 +7,6 @@ import data.permit.rbac
 default allow := false
 
 allow {
-    attributes.resource.type == "countries"
+    not "rbac" in policies.__allow_sources
     print(policies.__allow_sources)
 }
