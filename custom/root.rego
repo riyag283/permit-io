@@ -7,6 +7,5 @@ import data.permit.rbac
 default allow := false
 
 allow {
-    print(policies.__allow_sources)
    "teacher" in rbac.allowing_roles
 }
