@@ -15,7 +15,7 @@ allow {
 # The policy will allow if BOTH policies.allow and my_custom_rule are true
 
 allow {
-	custom.allow
+	input.resource.type == "countries"
 }
 
 allowing_sources := policies.__allow_sources

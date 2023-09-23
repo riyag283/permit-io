@@ -6,7 +6,7 @@ import permit.rbac
 default allow := false
 
 allow {
-    input.action == "read"
+    input.resource.type == "countries"
 }
 
 # You can find the official Rego tutorial at:
