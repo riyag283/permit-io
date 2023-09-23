@@ -6,11 +6,7 @@ import permit.rbac
 default allow := false
 
 allow {
-    not "rbac" in policies.__allow_sources
-} else {
-   not "demo" in rbac.allowing_roles
-} else {
-    input.user.key == "test@permit.io"
+    input.action == "read"
 }
 
 # You can find the official Rego tutorial at:
